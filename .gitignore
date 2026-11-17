@@ -1,6 +1,45 @@
-aienv/
+# Virtual environments
 venv/
-__pycache__/
-*.pyc
+aienv/
+.venv/
+
+# Environment variables and secrets
 .env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Uploaded user files
+uploads/
+storage/
+
+# IDE
+.vscode/
+
+# Logs
+*.log
+
+# Database backups
+*.sql
+*.db
+
+
+
+# Python test and cache files
 .pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Build files
+build/
+dist/
+*.egg-info/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
