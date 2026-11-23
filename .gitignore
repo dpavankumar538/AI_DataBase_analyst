@@ -1,4 +1,4 @@
-# Virtual environments
+# Python virtual environments
 venv/
 aienv/
 .venv/
@@ -6,40 +6,45 @@ aienv/
 # Environment variables and secrets
 .env
 .env.*
+!.env.example
+!**/.env.example
 
-# Python
+# Python cache
 __pycache__/
 *.py[cod]
 
-# Uploaded user files
-uploads/
+# Application storage and uploaded data
 storage/
+uploads/
+backend/storage/
 
-# IDE
-.vscode/
+# Frontend dependencies and builds
+frontend/node_modules/
+frontend/dist/
 
-# Logs
-*.log
-
-# Database backups
-*.sql
-*.db
-
-
-
-# Python test and cache files
+# Python test and coverage
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+.coverage
+htmlcov/
+
+# Logs and temporary data
+*.log
+logs/
+data/
 
 # Build files
 build/
 dist/
 *.egg-info/
 
-# OS files
+# Database files and backups
+*.sql
+*.db
+
+# IDE and operating system
+.vscode/
+.idea/
 .DS_Store
 Thumbs.db
-
-# IDE
-.idea/
